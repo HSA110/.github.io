@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiệm Bánh Ngọt Ngào</title>
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe6e6;
+        }
+
+        header {
+            background-color: #ffb3b3;
+            color: white;
+            padding: 1.5em 0;
+            text-align: center;
+            border-bottom: 3px solid #ff8080;
+        }
+
+        header h1 {
+            margin-bottom: 0.5em;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 20px;
+            background-color: #ff8080;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #ff4d4d;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .cake-section {
+            display: none;
+            margin-top: 20px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .cake-section h2 {
+            color: #ff6666;
+            border-bottom: 3px dotted #ffb3b3;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .cake-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .cake-item {
+            background-color: #ffe0b3;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        .cake-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 8px;
+        }
+
+        .cake-item h3 {
+            margin-top: 0;
+            color: #664d00;
+            font-size: 1em;
+            font-weight: bold;
+        }
+
+        .cake-section.active {
+            display: block;
+        }
+
+        footer {
+            background-color: #ffb3b3;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        footer h2 {
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 1.1em;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: #ff4d4d;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>🍰 Tiệm Bánh Ngọt Ngào 🧁</h1>
+        <nav>
+            <ul>
+                <li><a href="#banh-gato" data-target="banh-gato">🎂 Bánh Gato</a></li>
+                <li><a href="#banh-tiramissu" data-target="banh-tiramissu">🍮 Bánh Tiramissu</a></li>
+                <li><a href="#banh-cheesecake" data-target="banh-cheesecake">🧀 Bánh Cheesecake</a></li>
+                <li><a href="#banh-kem-lanh" data-target="banh-kem-lanh">🍦 Bánh Kem Lạnh</a></li>
+                <li><a href="#banh-su-kem" data-target="banh-su-kem">🥐 Bánh Su Kem</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="banh-gato" class="cake-section active">
+            <h2>🎂 Bánh Gato 🎂</h2>
+            <div class="cake-grid">
+                <div class="cake-item">
+                    <img src="images/banh-gato-1.jpg" alt="Bánh Gato 1">
+                    <h3>Bánh Gato Socola</h3>
+                </div>
+                <div class="cake-item">
+                    <img src="images/banh-gato-2.jpg" alt="Bánh Gato 2">
+                    <h3>Bánh Gato Trái Cây</h3>
+                </div>
+                <div class="cake-item">
+                    <img src="images/banh-gato-3.jpg" alt="Bánh Gato 3">
+                    <h3>Bánh Gato Cream</h3>
+                </div>
+                <div class="cake-item">
+                    <img src="images/banh-gato-4.jpg" alt="Bánh Gato 4">
+                    <h3>Bánh Gato Mâm Xôi</h3>
+                </div>
+                <div class="cake-item">
+                    <img src="images/banh-gato-5.jpg" alt="Bánh Gato 5">
+                    <h3>Bánh Gato Socola Trắng</h3>
+                </div>
+                <div class="cake-item">
+                    <img src="images/banh-gato-6.jpg" alt="Bánh Gato 6">
+                    <h3>Bánh Gato Chanh Dây</h3>
+                </div>
+                <div class="cake-item">
+                    <img src="images/banh-gato-7.jpg" alt="Bánh Gato 7">
+                    <h3>Bánh Gato Dâu Tây</h3>
+                </div>
+                <div class="cake-item">
+                    <img src="images/banh-gato-8.jpg" alt="Bánh Gato 8">
+                    <h3>Bánh Gato Hạt Dẻ</h3>
+                </div>
+                <div class="cake-item">
+                    <img src="images/banh-gato-9.jpg" alt="Bánh Gato 9">
+                    <h3>Bánh Gato Bơ</h3>
+                </div>
+                <div class="cake-item">
+                    <img src="images/banh-gato-10.jpg" alt="Bánh Gato 10">
+                    <h3>Bánh Gato Trà Xanh</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="banh-tiramissu" class="cake-section">
+            <h2>🍮 Bánh Tiramissu 🍮</h2>
+            <div class="cake-grid">
+                <div class="cake-item">
+                    <img src="images/banh-tiramissu-1.jpg" alt="Bánh Tiramissu 1">
+                    <h3>Tiramissu Truyền Thống</h3>
+                </div>
+                <div class="cake-item">
+                    <img src="images/banh-tiramissu-2.jpg" alt="Bánh Tiramissu 2">
+                    <h3>Tiramissu Socola</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="banh-cheesecake" class="cake-section">
+            <h2>🧀 Bánh Cheesecake 🧀</h2>
+            <div class="cake-grid">
+                <div class="cake-item">
+                    <img src="images/banh-cheesecake-1.jpg" alt="Bánh Cheesecake 1">
+                    <h3>Cheesecake New York</h3>
+                </div>
+                <div class="cake-item">
+                    <img src="images/banh-cheesecake-2.jpg" alt="Bánh Cheesecake 2">
+                    <h3>Cheesecake Việt Quất</h3>
+                    </div>
+                <div class="cake-item">
+                    <img src="images/banh-cheesecake-2.jpg" alt="Bánh Cheesecake 2">
+                    <h3>Cheesecake Việt Quất</h3>
+                    </div>
+                <div class="cake-item">
+                    <img src="images/banh-cheesecake-2.jpg" alt="Bánh Cheesecake 2">
+                    <h3>Cheesecake Việt Quất</h3>
+                    </div>
+                <div class="cake-item">
+                    <img src="images/banh-cheesecake-2.jpg" alt="Bánh Cheesecake 2">
+                    <h3>Cheesecake Việt Quất</h3>
+                    </div>
+                <div class="cake-item">
+                    <img src="images/banh-cheesecake-2.jpg" alt="Bánh Cheesecake 2">
+                    <h3>Cheesecake Việt Quất</h3>
+                    </div>
+                <div class="cake-item">
+                    <img src="images/banh-cheesecake-2.jpg" alt="Bánh Cheesecake 2">
+                    <h3>Cheesecake Việt Quất</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="banh-kem-lanh" class="cake-section">
+            <h2>🍦 Bánh Kem Lạnh 🍦</h2>
+            <div class="cake-grid">
+                <div class="cake-item">
+                    <img src="images/banh-kem-lanh-1.jpg" alt="Bánh Kem Lạnh 1">
+                    <h3>Kem Ốc Quế</h3>
+                </div>
+                <div class="cake-item">
+                    <img src="images/banh-kem-lanh-2.jpg" alt="Bánh Kem Lạnh 2">
+                    <h3>Kem Ly</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="banh-su-kem" class="cake-section">
+            <h2>🥐 Bánh Su Kem 🥐</h2>
+            <div class="cake-grid">
+                <div class="cake-item">
+                    <img src="images/banh-su-kem-1.jpg" alt="Bánh Su Kem 1">
+                    <h3>Su Kem Truyền Thống</h3>
+                </div>
+                <div class="cake-item">
+                    <img src="images/banh-su-kem-2.jpg" alt="Bánh Su Kem 2">
+                    <h3>Su Kem Socola</h3>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <h2>Thông Tin Liên Hệ</h2>
+        <p>📞 <strong>Số điện thoại:</strong> 0123 456 789</p>
+        <p>✉️ <strong>Email:</strong> <a href="mailto:tiembanhngotngao@gmail.com">tiembanhngotngao@gmail.com</a></p>
+        <p>📍 <strong>Địa chỉ:</strong> 123, Đường Hạnh Phúc, Quận Mơ Mộng, Thành Phố Ngọt Ngào</p>
+        <p>📸 <strong>Instagram:</strong> <a href="https://instagram.com/tiembanhngotngao" target="_blank">tiembanhngotngao</a></p>
+        <p>📘 <strong>Facebook:</strong> <a href="https://facebook.com/tiembanhngotngao" target="_blank">Tiệm Bánh Ngọt Ngào</a></p>
+    </footer>
+
+    <script>
+        // Đảm bảo chuyển trang hoạt động như mong muốn
+        document.querySelectorAll("nav ul li a").forEach(link => {
+            link.addEventListener("click", function (e) {
+                e.preventDefault();
+                document.querySelectorAll(".cake-section").forEach(section => {
+                    section.classList.remove("active");
+                });
+                const target = document.getElementById(this.getAttribute("data-target"));
+                target.classList.add("active");
+            });
+        });
+    </script>
+</body>
+
+</html>
